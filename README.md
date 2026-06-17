@@ -4,7 +4,54 @@ Requirements Reviewer Framework v1.0
 
 An open-source Claude Code skill for reviewing Product Requirements Documents (PRDs), user stories, epics, and requirements specifications for quality issues that commonly lead to scope creep, delivery delays, rework, and misaligned expectations.
 
-The skill evaluates requirements using a structured review framework and generates actionable feedback on ambiguity, completeness, acceptance criteria quality, consistency, and scope definition.
+The framework evaluates requirements using a structured review methodology and generates actionable feedback on ambiguity, completeness, acceptance criteria quality, consistency, and scope definition.
+
+---
+
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/amodiahs/claude-requirements-reviewer.git
+```
+
+### 2. Create a Claude Skills directory
+
+```bash
+mkdir -p ~/.claude/skills
+```
+
+### 3. Copy the repository into your Claude Skills folder
+
+```bash
+cp -R claude-requirements-reviewer ~/.claude/skills/
+```
+
+### 4. Restart Claude Code
+
+### 5. Review a requirements document
+
+Examples:
+
+```text
+Review this PRD using the Requirements Reviewer skill.
+```
+
+or
+
+```text
+Analyze this user story for ambiguity, completeness, and delivery risks.
+```
+
+The skill will generate:
+
+* Requirements Quality Score
+* Ambiguity Detection
+* Acceptance Criteria Review
+* Consistency Analysis
+* Scope & Dependency Assessment
+* Recommendations
 
 ---
 
@@ -36,7 +83,7 @@ The framework evaluates requirements across five dimensions:
 | Consistency                   | 15     |
 | Scope & Dependency Definition | 15     |
 
-Total Score: 100
+**Total Score: 100**
 
 ---
 
@@ -59,6 +106,9 @@ Examples:
 * fast
 * scalable
 * user-friendly
+* easy
+* flexible
+* as needed
 
 ---
 
@@ -126,12 +176,27 @@ Recommendations
 
 ## Installation
 
-Clone the repository.
+### Prerequisites
 
-Copy the skill folder into your Claude Code skills directory:
+* Claude Code installed
+* Claude Code Skills enabled
+
+Clone the repository:
 
 ```bash
-~/.claude/skills/
+git clone https://github.com/amodiahs/claude-requirements-reviewer.git
+```
+
+Create the Claude Skills directory:
+
+```bash
+mkdir -p ~/.claude/skills
+```
+
+Copy the repository:
+
+```bash
+cp -R claude-requirements-reviewer ~/.claude/skills/
 ```
 
 Restart Claude Code.
@@ -142,27 +207,32 @@ The skill will automatically become available when reviewing requirements docume
 
 ## Usage
 
-Example:
+Examples:
 
 ```text
 Review this PRD using the Requirements Reviewer skill.
 ```
 
-or
+```text
+Analyze this requirements document for ambiguity, completeness, and delivery risks.
+```
 
 ```text
-Analyze this user story for ambiguity, completeness, and delivery risks.
+Evaluate this user story using the Requirements Reviewer Framework.
 ```
 
 ---
 
-## Example Documents
+## Examples
 
 See the `examples/` directory for:
 
 * Good PRD example
 * Poor PRD example
 * Sample review outputs
+* Scoring examples
+
+These examples are fictional and intended solely to demonstrate the framework.
 
 ---
 
@@ -184,16 +254,18 @@ See the `examples/` directory for:
 
 * Improved contradiction detection
 * Better acceptance criteria recommendations
+* Enhanced ambiguity detection
 
 ### Version 1.2
 
 * User Story Review Mode
-* INVEST framework scoring
+* INVEST Framework scoring
 
 ### Version 2.0
 
 * Architecture Review Framework
 * Extensible review modules
+* Optional machine-readable JSON output
 
 ---
 
@@ -201,9 +273,17 @@ See the `examples/` directory for:
 
 This tool is intended to assist human reviewers, not replace them.
 
-Engineering judgment, product context, and stakeholder alignment remain essential.
+Engineering judgment, business context, stakeholder alignment, and implementation considerations remain essential.
 
 AI-generated findings should be reviewed before making implementation decisions.
+
+---
+
+## Contributing
+
+Contributions, suggestions, and feedback are welcome.
+
+If you discover false positives, missing review scenarios, or opportunities to improve the scoring framework, please open an issue or submit a pull request.
 
 ---
 
