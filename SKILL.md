@@ -1,8 +1,7 @@
 ---
-
-name: Requirements Reviewer
-description: Reviews PRDs, user stories, epics, and technical requirements for ambiguity, completeness, consistency, scope definition, and delivery risks.
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+name: requirements-reviewer
+description: "Reviews PRDs, user stories, epics, and technical requirements for ambiguity, completeness, consistency, and delivery risks."
+---
 
 # Requirements Reviewer Framework
 
